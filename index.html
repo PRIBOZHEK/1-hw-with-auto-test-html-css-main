@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>It-incubator precourse</title>
+    <style type="text/css">
+        TABLE {
+        border-collapse: collapse;
+    }
+   TD, TH {
+    padding: 3px;
+    border: 1px solid black;
+}
+    </style>
 </head>
 <body>
     <!-- ЗАДАНИЕ -->
@@ -64,20 +73,64 @@
                 - В подписи укажи названия любых тем по верстке (все, что знаешь или слышал). 
                 - Каждый чекбокс должен быть связан со своей подписью. Для этого чекбокс должен находиться в элементе для подписи
                 - Отметь "галочкой" (с помощью специального атрибута) темы, которые ты уже знаешь. -->
+                    <label for="HTML5">
+                        <input id="html" type="checkbox" name="html" checked>
+                        HTML5
+                </label>
+                    <label for="CSS3">
+                        <input id="css" type="checkbox" name="css">
+                        CSS3
+                </label>
+                <label for="react">
+                    <input id="react" type="checkbox" name="react">
+                    React
+                </label>
+                <label for="JS">
+                    <input id="sc" type="checkbox" name="sc">
+                    JavaScript
+                </label>
         </div>
         <!-- 5) Создай здесь однострочное поле для ввода текста с подсказкой "Новый скилл", которая исчезает, когда начинаешь что-то печатать (для подсказки есть специальный атрибут) -->
+        <input type="text" placeholder="Новый скилл">
         <!-- 6) Создай здесь кнопку “Добавить” -->
+         <button>добавить</button>
         <!-- 7) Добавь горизонтальную линию (для этого есть специальный тег) -->
-        
+        <hr>
         <table data-cy="hw-about-table-pre">
             <!-- 8) В таблице сделай 5 строк и 3 столбца. 
                         - В первой строке ячейки заголовков, в остальных обычные ячейки
                         - Добавь границы для всей таблицы с помощью специального атрибута border="". Он устарел, но работает
                         - В последнем ряду первая ячейка должна занимать все свободное место по горизонтали (ширине). Таблицу можно заполнять любыми данными -->
+                        <tr>
+                        <th>№ п/п</th>
+                        <th>Наименование</th>
+                        <th>Количество</th>
+                    </tr>
+                        <tr>
+                        <th>1</th>
+                        <th>Монитор</th>
+                        <th>2</th>
+                    </tr>
+                        <tr>
+                        <th>2</th>
+                        <th>Клавиатура</th>
+                        <th>1</th>
+                    </tr>
+                        <tr>
+                        <th>3</th>
+                        <th>Мышь</th>
+                        <th>1</th>
+                    </tr>
+                        <tr>
+                            <td colspan="2" style="text-align:left">ИТОГО:</td>
+                            <th>4</th>
+                        
+                    </tr>
         </table>
     </section>
     <footer data-cy="hw-footer-pre">
         <!-- 9) Создай здесь ссылку на наш сайт https://it-incubator.io/ (текст ссылки должен быть it-incubator) -->
+        <p><a href="https://it-incubator.io/">it-incubator</a></p>
     </footer>
 </body>
 </html>
