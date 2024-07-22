@@ -4,15 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>It-incubator precourse</title>
-    <style type="text/css">
-        TABLE {
-        border-collapse: collapse;
-    }
-   TD, TH {
-    padding: 3px;
-    border: 1px solid black;
-}
-    </style>
 </head>
 <body>
     <!-- ЗАДАНИЕ -->
@@ -31,17 +22,16 @@
         <!-- b) Несколько строк о себе: где учишься или работаешь, хобби, увлечения. Используй тег для абзаца. Длина строки должна быть больше 50-ти симвов (пробелы и др знаки припинания тоже считаются символом) -->
          <P>Работаю в Минском областном исполнительном комитете. Люблю изучять и пробовать что-то новое.</P>
         <!-- c) Фото (или любую картинку из интернета). Не забудь добавить описание на случай, если изображение не загрузится -->
-         <img src="/assets/img/my-photo.jpg" alt="">
+         <img src="//unsplash.it/600/200" alt="Случайное фото">
     </section>
 
     <section data-cy="hw1-section-about-pre">
         <!-- 2) В этом разделе создай выпадающий список с разными городами (не меньше 3-х). Свой город сделай вторым в этом списке. С помощью специального атрибута, сделай так, чтобы твой город всегда был выбранным по умолчанию  -->
-        <select>
-        <option selected disabled>Бобруйск</option>
-        <option>Минск</option>
-        <option>Бобруйск</option >
-        <option>Гомель</option>
-        <option>Брест</option>
+        <select name="city">
+        <option value="Рим">Рим</option>
+        <option value="Бобруйск" selected>Бобруйск</option>
+        <option value="Берлин">Берлин</option>
+        <option value="Москва">Москва</option>
         </select>
         <div data-cy="hw1-unordered-list-box-pre">
             <!-- 3) В этом разделе создай 2 дочерних элемента: -->
@@ -96,11 +86,12 @@
          <button>добавить</button>
         <!-- 7) Добавь горизонтальную линию (для этого есть специальный тег) -->
         <hr>
-        <table data-cy="hw-about-table-pre">
+        <table data-cy="hw-about-table-pre" border="1">
             <!-- 8) В таблице сделай 5 строк и 3 столбца. 
                         - В первой строке ячейки заголовков, в остальных обычные ячейки
                         - Добавь границы для всей таблицы с помощью специального атрибута border="". Он устарел, но работает
                         - В последнем ряду первая ячейка должна занимать все свободное место по горизонтали (ширине). Таблицу можно заполнять любыми данными -->
+                        
                         <tr>
                         <th>№ п/п</th>
                         <th>Наименование</th>
@@ -122,9 +113,7 @@
                         <th>1</th>
                     </tr>
                         <tr>
-                            <td colspan="2" style="text-align:left">ИТОГО:</td>
-                            <th>4</th>
-                        
+                            <td colspan="3" style="text-align:left">ИТОГО:</td>                        
                     </tr>
         </table>
     </section>
